@@ -152,6 +152,8 @@ entity Loan {
   modifiedBy String,
   modifiedDate LocalDate
 }
+
+
 entity HolidayType {
   name String required,
   moonDependency YesOrNo required
@@ -161,7 +163,6 @@ entity Holiday {
   toDate LocalDate required,
   numberOfDays Integer required
 }
-entity PayrollManagement
 entity DesignationWiseAllowance {
   allowanceType AllowanceType,
   allowanceCategory AllowanceCategory,
@@ -281,5 +282,5 @@ paginate Department, Designation, Employee, Attachment, AcademicInformation, Tra
 paginate HolidayType, Holiday, DesignationWiseAllowance with infinite-scroll
 service Department, Designation, Employee, Attachment, AcademicInformation, TrainingInformation, FamilyInformation, ReferenceInformation, ExperienceInformation, AcademicInformationAttachment, ExperienceInformationAttachment, TrainingInformationAttachment, Office, FinancialAccountYear, Tax, Salary, ProvidentFund, MonthlySalary, Advance, Fine, Loan, DesignationWiseAllowance with serviceClass
 service HolidayType, Holiday with serviceImpl
-search Department, Designation, Employee, Attachment, AcademicInformation, TrainingInformation, FamilyInformation, ReferenceInformation, ExperienceInformation, AcademicInformationAttachment, ExperienceInformationAttachment, TrainingInformationAttachment, Office, FinancialAccountYear, Tax, Salary, ProvidentFund, MonthlySalary, Advance, Fine, Loan, PayrollManagement with elasticsearch
+search Department, Designation, Employee, Attachment, AcademicInformation, TrainingInformation, FamilyInformation, ReferenceInformation, ExperienceInformation, AcademicInformationAttachment, ExperienceInformationAttachment, TrainingInformationAttachment, Office, FinancialAccountYear, Tax, Salary, ProvidentFund, MonthlySalary, Advance, Fine, Loan with elasticsearch
 filter Department, Designation, Employee, Attachment, AcademicInformation, TrainingInformation, FamilyInformation, ReferenceInformation, ExperienceInformation, AcademicInformationAttachment, ExperienceInformationAttachment, TrainingInformationAttachment, Office, FinancialAccountYear, Tax, Salary, ProvidentFund, MonthlySalary, Advance, Fine, Loan, HolidayType, Holiday, DesignationWiseAllowance

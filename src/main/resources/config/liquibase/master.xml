@@ -29,6 +29,7 @@
     <include file="config/liquibase/changelog/20190525155822_added_entity_HolidayType.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20190525155823_added_entity_Holiday.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20190603165435_added_entity_DesignationWiseAllowance.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190613161302_added_entity_Manager.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20190405124354_added_entity_constraints_Employee.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20190405124355_added_entity_constraints_Attachment.xml" relativeToChangelogFile="false"/>
